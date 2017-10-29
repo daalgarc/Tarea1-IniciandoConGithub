@@ -54,4 +54,29 @@ void copy(char to[], char from[])
         ++i;
 }
 
+/* cuenta: cuenta los caracteres de la cadena seleccionada */
+int cuenta(char cadena[])
+{
+    int i;
+    i = 0;
+    while (cadena[i] != '\0')
+        ++i;
+    return i;
+}
+
+/* cuenta_digitos: cuenta los digitos de la cadena seleccionada */
+int cuenta_digitos(char cadena[])
+{
+    int i, digitos;
+    i = 0;
+    digitos = 0;
+    while (cadena[i] != '\0')
+    {
+        if (cadena[i] >= '0' && cadena[i] <= '9')
+            ++digitos;
+        ++i;
+    }
+    return digitos;
+}
+
 
